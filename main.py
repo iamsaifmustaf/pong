@@ -1,6 +1,5 @@
 from turtle import Turtle, Screen, tracer, width, window_height
 import time
-import winsound
 from paddle import Paddle
 from ball import Ball
 from scoreboard import Scoreboard
@@ -27,9 +26,6 @@ def pong_game():
     screen.onkeypress(r_paddle.move_down, "Down")
     screen.onkeypress(l_paddle.move_up, "w")
     screen.onkeypress(l_paddle.move_down, "s")
-
-
-
 
     game_is_on = True
 
@@ -59,7 +55,6 @@ def pong_game():
             ball.reset_position()
             time.sleep(2)
         
-
     print("Game Over")
     time.sleep(3)
 
